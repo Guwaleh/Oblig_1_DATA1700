@@ -2,9 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bestilling av kinobilletter</title>
+    <script src="index.js"></script>
 </head>
 <body>
-<h1>Det er åpenbare endringer her</h1>
+<table style.border="1">
+    <tr>
+        <td>Velg film:</td>
+        <td>
+            <select id="film" required>
+                <option value="">Velg film her</option>
+                <option value="Shawshank Redemption">Shawshank Redemption </option>
+                <option value="Gudfaren">Gudfaren </option>
+                <option value="The Dark knight">The Dark Knight </option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Antall:</td>
+        <td><input type="number" id="antall" placeholder="Antall" required></td>
+    </tr>
+    <tr>
+        <td>Fornavn:</td>
+        <td><input type="text" id="fornavn" placeholder="Fornavn" required></td>
+    </tr>
+    <tr>
+        <td>Etternavn:</td>
+        <td><input type="text" id="etternavn" placeholder="Etternavn" required></td>
+    </tr>
+    <tr>
+        <td>Telefonnummer:</td>
+        <td><input type="tel" id="telefon" placeholder="Telefonnr" required></td>
+    </tr>
+    <tr>
+        <td>Epost:</td>
+        <td><input type="email" id="epost" placeholder="Epost" required></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button id="kjopBillettKnapp">Kjøp billetter</button>
+        </td>
+    </tr>
+</table>
+<h2>Alle billetter</h2>
+<table id="billett_tabell">
+    <thead>
+    <tr>
+        <th>Film</th>
+        <th>Antall</th>
+        <th>Fornavn</th>
+        <th>Etternavn</th>
+        <th>Telefonnummer</th>
+        <th>Epost</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Billettene vil listes ut her -->
+    </tbody>
+</table>
+<button id="deleteTicketsButton">Slett alle billetter</button>
 </body>
 </html>
