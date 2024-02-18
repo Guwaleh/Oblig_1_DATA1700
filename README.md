@@ -9,7 +9,5 @@ GitHub repo url: https://github.com/Guwaleh/Oblig_1_DATA1700.git
 
 Fullt navn: Gustav Lehmann
 
-Og her er det endringer
-
 Kort beskrivelse av applikasjonen:
-
+En applikasjon som tar inn valg og input fra bruker til å bestille kinobilletter.
