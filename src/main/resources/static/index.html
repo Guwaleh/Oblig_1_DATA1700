@@ -3,41 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Bestilling av kinobilletter</title>
-    <script src="index.js"></script>
 </head>
 <body>
-<table style.border="1">
+<table style="border: 1px solid black;">
     <tr>
-        <td>Velg film:</td>
+        <td>
+            <label for="film">Velg film:</label>
+        </td>
         <td>
             <select id="film" required>
                 <option value="">Velg film her</option>
-                <option value="Shawshank Redemption">Shawshank Redemption </option>
-                <option value="Gudfaren">Gudfaren </option>
-                <option value="The Dark knight">The Dark Knight </option>
+                <option value="Shawshank Redemption">Shawshank Redemption</option>
+                <option value="Gudfaren">Gudfaren</option>
+                <option value="The Dark Knight">The Dark Knight</option>
             </select>
         </td>
     </tr>
+
     <tr>
-        <td>Antall:</td>
-        <td><input type="number" id="antall" placeholder="Antall" required></td>
+        <td>
+            <label for="antall">Antall:</label>
+        </td>
+        <td>
+            <input type="number" id="antall" placeholder="Antall" required>
+        </td>
     </tr>
+
     <tr>
-        <td>Fornavn:</td>
-        <td><input type="text" id="fornavn" placeholder="Fornavn" required></td>
+        <td>
+            <label for="fornavn">Fornavn:</label>
+        </td>
+        <td>
+            <input type="text" id="fornavn" placeholder="Fornavn" required>
+        </td>
     </tr>
+
     <tr>
-        <td>Etternavn:</td>
-        <td><input type="text" id="etternavn" placeholder="Etternavn" required></td>
+        <td>
+            <label for="etternavn">Etternavn:</label>
+        </td>
+        <td>
+            <input type="text" id="etternavn" placeholder="Etternavn" required>
+        </td>
     </tr>
+
     <tr>
-        <td>Telefonnummer:</td>
-        <td><input type="tel" id="telefon" placeholder="Telefonnr" required></td>
+        <td>
+            <label for="telefon">Telefonnummer:</label>
+        </td>
+        <td>
+            <input type="tel" id="telefon" placeholder="Telefonnr" required>
+        </td>
     </tr>
+
     <tr>
-        <td>Epost:</td>
+        <td>
+            <label for ="epost">Epost: </label>
+        </td>
         <td><input type="email" id="epost" placeholder="Epost" required></td>
     </tr>
+
     <tr>
         <td colspan="2">
             <button id="kjopBillettKnapp">Kjøp billetter</button>
@@ -57,9 +82,11 @@
     </tr>
     </thead>
     <tbody>
-    <!-- Billettene vil listes ut her -->
     </tbody>
 </table>
-<button id="deleteTicketsButton">Slett alle billetter</button>
+
+<button id="tilbakeStillBill">Slett alle billetter</button>
+
+<script src="index.js"></script>
 </body>
 </html>
